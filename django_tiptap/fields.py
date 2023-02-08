@@ -6,7 +6,7 @@ from .widgets import TipTapWidget
 
 class TipTapTextFormField(fields.CharField):
     def __init__(self, *args, **kwargs):
-        kwargs.update({"widget": TipTapWidget()})
+        kwargs["widget"] = TipTapWidget()
         super().__init__(*args, **kwargs)
 
 
